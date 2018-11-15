@@ -1,0 +1,146 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<!-- Mirrored from linux.zipitwireless.com/projects/z2kernel/browser/trunk/blob-2.0.5-pre2_to_zipit2-1.0.patch by HTTrack Website Copier/3.x [XR&CO'2008], Wed, 15 Apr 2009 18:57:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+<head>
+ <title>/trunk/blob-2.0.5-pre2_to_zipit2-1.0.patch - Zipit Wireless Messenger 2 Kernel Software - Trac</title><link rel="start" href="../../wiki.html" /><link rel="search" href="../../search.html" /><link rel="help" href="../../wiki/TracGuide.html" /><link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/browser.css" type="text/css" /><link rel="icon" href="../../chrome/common/favicon.ico" type="image/x-icon" /><link rel="shortcut icon" href="../../chrome/common/favicon.ico" type="image/x-icon" /><link rel="up" href="../trunk.html" title="Parent directory" /><link rel="alternate" href="blob-2.0.5-pre2_to_zipit2-1.056e6.patch?format=txt" title="Plain Text" type="text/plain" /><link rel="alternate" href="blob-2.0.5-pre2_to_zipit2-1.041f0.patch?format=raw" title="Original Format" type="text/x-diff; charset=iso-8859-15" /><style type="text/css">
+</style>
+ <script type="text/javascript" src="../../chrome/common/js/trac.js"></script>
+</head>
+<body>
+
+
+<div id="banner">
+
+<div id="header"><a id="logo" href="../../../../index.html"><img src="../../chrome/common/trac_banner.png" alt="" /></a><hr /></div>
+
+<form id="search" action="http://efennama:zxasqw12@linux.zipitwireless.com/projects/z2kernel/search" method="get">
+ <div>
+  <label for="proj-search">Search:</label>
+  <input type="text" id="proj-search" name="q" size="10" accesskey="f" value="" />
+  <input type="submit" value="Search" />
+  <input type="hidden" name="wiki" value="on" />
+  <input type="hidden" name="changeset" value="on" />
+  <input type="hidden" name="ticket" value="on" />
+ </div>
+</form>
+
+
+
+<div id="metanav" class="nav"><ul><li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../settings.html">Settings</a></li><li><a accesskey="6" href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../../../projects.html">Back to Index</a></li></ul></div>
+</div>
+
+<div id="mainnav" class="nav"><ul><li class="first"><a accesskey="1" href="../../wiki.html">Wiki</a></li><li><a accesskey="2" href="../../timeline.html">Timeline</a></li><li><a accesskey="4" href="../../search.html">Search</a></li><li class="active  last"><a href="../../browser.html">Browse Source</a></li></ul></div>
+<div id="main">
+
+
+
+
+<div id="ctxtnav" class="nav">
+ <ul>
+  <li class="first"><a href="../../changeset/2/trunk/blob-2.0.5-pre2_to_zipit2-1.0.html">
+   Last Change</a></li>
+  <li class="last"><a href="../../log/trunk/blob-2.0.5-pre2_to_zipit2-1.0.html">
+   Revision Log</a></li>
+ </ul>
+</div>
+
+
+<div id="searchable">
+<div id="content" class="browser">
+ <h1><a class="first" title="Go to root directory" href="../../browser.html">root</a><span class="sep">/</span><a title="View trunk" href="../trunk.html">trunk</a><span class="sep">/</span><a title="View blob-2.0.5-pre2_to_zipit2-1.0.patch" href="blob-2.0.5-pre2_to_zipit2-1.0.html">blob-2.0.5-pre2_to_zipit2-1.0.patch</a></h1>
+
+ <div id="jumprev">
+  <form action="#" method="get">
+   <div>
+    <label for="rev">View revision:</label>
+    <input type="text" id="rev" name="rev" value="" size="4" />
+   </div>
+  </form>
+ </div>
+
+ 
+
+ 
+  <table id="info" summary="Revision info"><tr>
+    <th scope="col">
+     Revision <a href="../../changeset/2.html">2</a>, 2.8 MB
+     (checked in by drmikecrowe, 1 year ago)
+    </th></tr><tr>
+    <td class="message"><p>
+Updated patch to match community request. <br />
+Fixed blob patch. <br />
+</p>
+<p>
+Engineering notes: <br />
+</p>
+<p>
+I’ve updated the GPL patch files, and they appear clean now. The <br />
+problems with them turned out to be CVS updating the RCS keywords that <br />
+showed up in some projects as well as the patch files themselves. <br />
+</p>
+<p>
+I’ve also fixed the make_patches.sh script in the CVS zipit2/build_tree <br />
+repository so that it generates correct patch files. The correct patch <br />
+files are also attached to this email. <br />
+</p>
+<p>
+These patches can be applied from the root directory of each project by <br />
+patch –p2 &lt; “project patch file” (i.e. these patches have a <br />
+build_tree/”module” path prefix).  <br />
+</p>
+</td>
+   </tr>
+  </table>
+  <div id="preview">
+    <strong>HTML preview not available</strong>, since the file size exceeds
+    262144 bytes. Try <a href="blob-2.0.5-pre2_to_zipit2-1.041f0.patch?format=raw">downloading</a> the file instead.
+  </div>
+
+ <div id="help">
+  <strong>Note:</strong> See <a href="../../wiki/TracBrowser.html">TracBrowser</a> for help on using the browser.
+ </div>
+
+  <div id="anydiff">
+   <form action="http://efennama:zxasqw12@linux.zipitwireless.com/projects/z2kernel/anydiff" method="get">
+    <div class="buttons">
+     <input type="hidden" name="new_path" value="/trunk/blob-2.0.5-pre2_to_zipit2-1.0.patch" />
+     <input type="hidden" name="old_path" value="/trunk/blob-2.0.5-pre2_to_zipit2-1.0.patch" />
+     <input type="hidden" name="new_rev" value="" />
+     <input type="hidden" name="old_rev" value="" />
+     <input type="submit" value="View changes..." title="Prepare an Arbitrary Diff" />
+    </div>
+   </form>
+  </div>
+
+</div>
+</div>
+<script type="text/javascript">searchHighlight()</script>
+<div id="altlinks"><h3>Download in other formats:</h3><ul><li class="first"><a href="blob-2.0.5-pre2_to_zipit2-1.056e6.patch?format=txt">Plain Text</a></li><li class="last"><a href="blob-2.0.5-pre2_to_zipit2-1.041f0.patch?format=raw">Original Format</a></li></ul></div>
+
+</div>
+
+<div id="footer">
+ <hr />
+ <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../../chrome/common/trac_logo_mini.png" height="30" width="107"
+   alt="Trac Powered"/></a>
+ <p class="left">
+  Powered by <a href="../../about.html"><strong>Trac 0.10.4</strong></a><br />
+  By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+ </p>
+ <p class="right">
+  Hosted by <a href="../../../../index.html">linux.zipitwireless.com</a>
+ </p>
+</div>
+
+
+
+ </body>
+
+<!-- Mirrored from linux.zipitwireless.com/projects/z2kernel/browser/trunk/blob-2.0.5-pre2_to_zipit2-1.0.patch by HTTrack Website Copier/3.x [XR&CO'2008], Wed, 15 Apr 2009 19:03:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8"><!-- /Added by HTTrack -->
+</html>
+
